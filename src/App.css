@@ -1,0 +1,299 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+ .container-fluid{
+  margin: 0%;
+ }
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .image {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+} */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+.centered h6 {
+  margin: 0; 
+  font-size: 18px; 
+  line-height: 1.2;
+}
+
+
+.navbarr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   
+  z-index: 2; 
+}
+
+
+.fullscreen-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+.fullscreen-bg__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+ .text-border{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+.hover figure img {
+  
+  width: 100%; 
+  height: auto;
+  transition: transform 0.4s ease-in-out; 
+  transform-origin: center center; 
+}
+
+.hover figure img:hover  {
+  transform: scale(1.3); 
+}
+figure {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  padding: 18px 16px;
+  border-radius: 50%;
+  border: 2px solid black;
+
+}
+
+.custom-swiper-button-prev {
+  left: 15px;
+}
+
+.custom-swiper-button-next {
+  right: 15px;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-swiper-button-prev::after
+{
+  content: '<'; 
+  color: white;
+  font-size: 28px;
+}
+.custom-swiper-button-next::after {
+  content: '>'; 
+  color: white;
+  font-size: 28px;
+}
+.top-right {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  visibility: hidden;
+  transition: visibility 0.3s ease; 
+}
+
+.card-container:hover .top-right {
+  visibility: visible;
+}
+.right {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  visibility: hidden;
+  transition: visibility 0.3s ease; 
+}
+
+
+.card-container:hover .right {
+  visibility: visible;
+}
+/* swiper */
+.rightt{
+  position: absolute;
+  top: 60px;
+  right: 18px;
+  visibility: hidden;
+  transition: visibility 0.3s ease; 
+}
+.card-container:hover .rightt {
+  visibility: visible;
+}
+.bg-text{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 10px;
+  color:white;
+  font-size: clamp(12px,4vw,32px);
+}
+.justext{
+  text-align: left;
+}
+
+@media only screen and (max-width: 1025px){
+  .bnrtxt p ,h5{
+    font-size: 10px;
+    }
+    .aimg{
+      width: 100%;
+      height: auto;
+    }
+}
+@media only screen and (max-width: 769px){
+  .bnrtxt p ,h5{
+    font-size: 10px;
+    }
+    .aimg{
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media only screen and (max-width: 426px)
+{
+  
+  
+  .collapse li Link .nav-link{
+    color:white
+  }
+  .centered{
+    margin-top: 25px;
+    font-size: 10px;
+  }
+  .bannertext h3 {
+     font-size: 10px;
+    
+  }
+  .bannertext h1 {
+    font-size: 10px;
+  }
+  .bannertext button{
+    font-size: 6px;
+  }
+  .aimgg{
+    width: 100%;
+    height: auto;
+  }
+ .himage{
+  width: 100%;
+  height: auto;
+ }
+
+  
+  #foot{
+    border: none;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  .top-right{
+    visibility:"hidden"
+  }
+  .bnrtxt p ,h5{
+  font-size: 10px;
+  }
+  .abbanr{
+    display: block;
+  }
+  .aimg{
+    width: 100%;
+    height: auto;
+  }
+  .tree{
+    display: none;
+  }
+  
+  
+}
+
+
+
